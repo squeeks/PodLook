@@ -1,0 +1,7 @@
+﻿/* Localized versions of Info.plist keys */
+
+CFBundleGetInfoString = "PodLook Copyright (c) 2010 Squeeks.";
+NSHumanReadableCopyright = "Copyright (c) 2010 Squeeks.";
+
+"Documentation" = "ドキュメンテーション";
+"Source" = "ソースコード";

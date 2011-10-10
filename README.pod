@@ -1,0 +1,52 @@
+=begin html
+
+<center>
+	<img src="http://i.imgur.com/gSYnB.png" alt="Screenshot"/>
+</center>
+
+=end html
+
+=head1 PodLook
+
+Read your Plain Old Documention with QuickLook.
+
+=head1 Synopsis
+
+If you're a Perl hacker who reads documentation, This will reformat POD inside
+your Perl code and convert it into something easier to read. 
+
+=head1 Installation
+
+Firstly, download and unzip the most recent build I've made
+L<http://github.com/downloads/squeeks/PodLook/PodLook.zip> from here, or clone
+the repository and build the target yourself. You'll need a recent copy of
+Xcode.
+
+Simply put the PodLook.qlgenerator into your C< ~/Library/QuickLook/> folder, or make it if it
+doesn't exist. Then crack open a terminal and run C< qlmanage -r >. To
+uninstall, just turf or move the file. This should work just fine under 10.6 and
+Lion.
+
+=head1 Stuff not yet done
+
+Charset handling, at present we assume everything is UTF8.
+In addition a way to "fall back" to OS X's own syntax hilighting, or our own
+better one if there is no actual documentation inside the said file.
+
+=head1 Bugs and fixes
+
+There could be bugs with this! If there is, please let me know. Patches, as
+always, are welcome as well.
+
+=head1 Thants
+
+Sakurina and WAHa.06x36.
+
+=head1 License and Copyright
+
+Copyright 2010 Squeeks.
+
+This program is free software; you can redistribute it and/or modify it under the terms of either: 
+the GNU General Public License as published by the Free Software Foundation; or the Artistic License.
+
+=cut

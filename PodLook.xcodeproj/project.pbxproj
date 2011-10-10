@@ -1,0 +1,313 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A1260851442E9C2005C6C65 /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A1260841442E9C2005C6C65 /* QuickLook.framework */; };
+		1A1260871442E9C2005C6C65 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A1260861442E9C2005C6C65 /* ApplicationServices.framework */; };
+		1A1260891442E9C2005C6C65 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A1260881442E9C2005C6C65 /* CoreServices.framework */; };
+		1A12608B1442E9C2005C6C65 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A12608A1442E9C2005C6C65 /* CoreFoundation.framework */; };
+		1A1260911442E9C2005C6C65 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1A12608F1442E9C2005C6C65 /* InfoPlist.strings */; };
+		1A1260941442E9C2005C6C65 /* GenerateThumbnailForURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1260931442E9C2005C6C65 /* GenerateThumbnailForURL.m */; };
+		1A1260961442E9C2005C6C65 /* GeneratePreviewForURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1260951442E9C2005C6C65 /* GeneratePreviewForURL.m */; };
+		1A1260981442E9C2005C6C65 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A1260971442E9C2005C6C65 /* main.c */; };
+		1A12609F1442EA01005C6C65 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A12609E1442EA01005C6C65 /* WebKit.framework */; };
+		1A1260A31442EA78005C6C65 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A1260A21442EA78005C6C65 /* AppKit.framework */; };
+		1A1260A61442EB0E005C6C65 /* PodLook.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A1260A41442EB0E005C6C65 /* PodLook.h */; };
+		1A1260A71442EB0E005C6C65 /* PodLook.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1260A51442EB0E005C6C65 /* PodLook.m */; };
+		1A1260A91442EB76005C6C65 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A1260A81442EB76005C6C65 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1A1260811442E9C2005C6C65 /* PodLook.qlgenerator */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PodLook.qlgenerator; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A1260841442E9C2005C6C65 /* QuickLook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLook.framework; path = System/Library/Frameworks/QuickLook.framework; sourceTree = SDKROOT; };
+		1A1260861442E9C2005C6C65 /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = System/Library/Frameworks/ApplicationServices.framework; sourceTree = SDKROOT; };
+		1A1260881442E9C2005C6C65 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
+		1A12608A1442E9C2005C6C65 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		1A12608E1442E9C2005C6C65 /* PodLook-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PodLook-Info.plist"; sourceTree = "<group>"; };
+		1A1260901442E9C2005C6C65 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1A1260921442E9C2005C6C65 /* PodLook-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PodLook-Prefix.pch"; sourceTree = "<group>"; };
+		1A1260931442E9C2005C6C65 /* GenerateThumbnailForURL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GenerateThumbnailForURL.m; sourceTree = "<group>"; };
+		1A1260951442E9C2005C6C65 /* GeneratePreviewForURL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeneratePreviewForURL.m; sourceTree = "<group>"; };
+		1A1260971442E9C2005C6C65 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		1A12609E1442EA01005C6C65 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		1A1260A21442EA78005C6C65 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		1A1260A41442EB0E005C6C65 /* PodLook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PodLook.h; sourceTree = "<group>"; };
+		1A1260A51442EB0E005C6C65 /* PodLook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PodLook.m; sourceTree = "<group>"; };
+		1A1260A81442EB76005C6C65 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1A1260B01442F2FB005C6C65 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1A12607C1442E9C2005C6C65 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A1260851442E9C2005C6C65 /* QuickLook.framework in Frameworks */,
+				1A1260871442E9C2005C6C65 /* ApplicationServices.framework in Frameworks */,
+				1A1260891442E9C2005C6C65 /* CoreServices.framework in Frameworks */,
+				1A12608B1442E9C2005C6C65 /* CoreFoundation.framework in Frameworks */,
+				1A12609F1442EA01005C6C65 /* WebKit.framework in Frameworks */,
+				1A1260A31442EA78005C6C65 /* AppKit.framework in Frameworks */,
+				1A1260A91442EB76005C6C65 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A1260741442E9C2005C6C65 = {
+			isa = PBXGroup;
+			children = (
+				1A12608C1442E9C2005C6C65 /* PodLook */,
+				1A1260831442E9C2005C6C65 /* Frameworks */,
+				1A1260821442E9C2005C6C65 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1A1260821442E9C2005C6C65 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1A1260811442E9C2005C6C65 /* PodLook.qlgenerator */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1A1260831442E9C2005C6C65 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1A1260A81442EB76005C6C65 /* Foundation.framework */,
+				1A1260A21442EA78005C6C65 /* AppKit.framework */,
+				1A12609E1442EA01005C6C65 /* WebKit.framework */,
+				1A1260841442E9C2005C6C65 /* QuickLook.framework */,
+				1A1260861442E9C2005C6C65 /* ApplicationServices.framework */,
+				1A1260881442E9C2005C6C65 /* CoreServices.framework */,
+				1A12608A1442E9C2005C6C65 /* CoreFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1A12608C1442E9C2005C6C65 /* PodLook */ = {
+			isa = PBXGroup;
+			children = (
+				1A1260931442E9C2005C6C65 /* GenerateThumbnailForURL.m */,
+				1A1260951442E9C2005C6C65 /* GeneratePreviewForURL.m */,
+				1A1260971442E9C2005C6C65 /* main.c */,
+				1A1260A41442EB0E005C6C65 /* PodLook.h */,
+				1A1260A51442EB0E005C6C65 /* PodLook.m */,
+				1A12608D1442E9C2005C6C65 /* Supporting Files */,
+			);
+			path = PodLook;
+			sourceTree = "<group>";
+		};
+		1A12608D1442E9C2005C6C65 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1A12608E1442E9C2005C6C65 /* PodLook-Info.plist */,
+				1A12608F1442E9C2005C6C65 /* InfoPlist.strings */,
+				1A1260921442E9C2005C6C65 /* PodLook-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1A12607D1442E9C2005C6C65 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A1260A61442EB0E005C6C65 /* PodLook.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1A1260801442E9C2005C6C65 /* PodLook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A12609B1442E9C2005C6C65 /* Build configuration list for PBXNativeTarget "PodLook" */;
+			buildPhases = (
+				1A12607B1442E9C2005C6C65 /* Sources */,
+				1A12607C1442E9C2005C6C65 /* Frameworks */,
+				1A12607D1442E9C2005C6C65 /* Headers */,
+				1A12607E1442E9C2005C6C65 /* Resources */,
+				1A12607F1442E9C2005C6C65 /* Rez */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PodLook;
+			productName = PodLook;
+			productReference = 1A1260811442E9C2005C6C65 /* PodLook.qlgenerator */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1A1260761442E9C2005C6C65 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0410;
+				ORGANIZATIONNAME = "";
+			};
+			buildConfigurationList = 1A1260791442E9C2005C6C65 /* Build configuration list for PBXProject "PodLook" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				ja,
+			);
+			mainGroup = 1A1260741442E9C2005C6C65;
+			productRefGroup = 1A1260821442E9C2005C6C65 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1A1260801442E9C2005C6C65 /* PodLook */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1A12607E1442E9C2005C6C65 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A1260911442E9C2005C6C65 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXRezBuildPhase section */
+		1A12607F1442E9C2005C6C65 /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1A12607B1442E9C2005C6C65 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A1260941442E9C2005C6C65 /* GenerateThumbnailForURL.m in Sources */,
+				1A1260961442E9C2005C6C65 /* GeneratePreviewForURL.m in Sources */,
+				1A1260981442E9C2005C6C65 /* main.c in Sources */,
+				1A1260A71442EB0E005C6C65 /* PodLook.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1A12608F1442E9C2005C6C65 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1A1260901442E9C2005C6C65 /* en */,
+				1A1260B01442F2FB005C6C65 /* ja */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1A1260991442E9C2005C6C65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		1A12609A1442E9C2005C6C65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		1A12609C1442E9C2005C6C65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PodLook/PodLook-Prefix.pch";
+				INFOPLIST_FILE = "PodLook/PodLook-Info.plist";
+				INSTALL_PATH = /Library/QuickLook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = qlgenerator;
+			};
+			name = Debug;
+		};
+		1A12609D1442E9C2005C6C65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PodLook/PodLook-Prefix.pch";
+				INFOPLIST_FILE = "PodLook/PodLook-Info.plist";
+				INSTALL_PATH = /Library/QuickLook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = qlgenerator;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1A1260791442E9C2005C6C65 /* Build configuration list for PBXProject "PodLook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A1260991442E9C2005C6C65 /* Debug */,
+				1A12609A1442E9C2005C6C65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A12609B1442E9C2005C6C65 /* Build configuration list for PBXNativeTarget "PodLook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A12609C1442E9C2005C6C65 /* Debug */,
+				1A12609D1442E9C2005C6C65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1A1260761442E9C2005C6C65 /* Project object */;
+}
