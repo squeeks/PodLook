@@ -18,7 +18,7 @@ your Perl code and convert it into something easier to read.
 =head1 Installation
 
 Firstly, download and unzip the most recent build I've made
-L<http://github.com/downloads/squeeks/PodLook/PodLook.zip> from here, or clone
+L<https://github.com/downloads/squeeks/PodLook/PodLook%201.3.zip> from here, or clone
 the repository and build the target yourself. You'll need a recent copy of
 Xcode.
 
