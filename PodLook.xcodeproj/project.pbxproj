@@ -153,7 +153,7 @@
 		1A1260761442E9C2005C6C65 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0410;
+				LastUpgradeCheck = 0420;
 				ORGANIZATIONNAME = "";
 			};
 			buildConfigurationList = 1A1260791442E9C2005C6C65 /* Build configuration list for PBXProject "PodLook" */;
