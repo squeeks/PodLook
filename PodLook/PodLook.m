@@ -6,6 +6,8 @@ NSMutableString *PodHtmlConversion(char const *PODFile)
 	
 	NSString *FileLocation = [[[NSString alloc] initWithUTF8String:PODFile] autorelease];	
 	
+    NSError* error = nil;
+
 	NSTask *Pod2HTMLTask;
 	Pod2HTMLTask = [[NSTask alloc] init];
 	[Pod2HTMLTask setLaunchPath: @"/usr/bin/pod2html"];
@@ -65,15 +67,14 @@ NSMutableString *PodHtmlConversion(char const *PODFile)
 		//Append the source code to the bottom
 		const char *sourceHeader = "<pre>";
 		const char *sourceFooter = "</pre></div>";
-		NSMutableString *sourceOutput = [[[NSMutableString alloc] initWithCString: sourceHeader] autorelease];
-		NSMutableString *sourceCode   = [[[NSMutableString alloc] initWithContentsOfFile: FileLocation] autorelease];
-		
+		NSMutableString *sourceOutput = [NSMutableString stringWithCString: sourceHeader encoding: NSUTF8StringEncoding];
+		NSMutableString *sourceCode   = [[[NSMutableString alloc] initWithContentsOfFile: FileLocation encoding: NSUTF8StringEncoding error: &error] autorelease];		
 		// Clean out characters that break
 		[sourceCode replaceOccurrencesOfString:@"&" withString:@"&amp;" options:0 range:NSMakeRange(0, [sourceCode length])];
 		[sourceCode replaceOccurrencesOfString:@">" withString:@"&gt;"  options:0 range:NSMakeRange(0,  [sourceCode length])];
 		[sourceCode replaceOccurrencesOfString:@"<" withString:@"&lt;"  options:0 range:NSMakeRange(0,  [sourceCode length])];
 		
-		NSMutableString *sourceEnd    = [[[NSMutableString alloc] initWithCString: sourceFooter] autorelease];
+		NSMutableString *sourceEnd    = [NSMutableString stringWithCString: sourceFooter encoding: NSUTF8StringEncoding];
 		
 		[sourceOutput appendString: sourceCode];
 		[sourceOutput appendString: sourceEnd];
@@ -89,9 +90,9 @@ NSMutableString *PodHtmlConversion(char const *PODFile)
 		// Wrap the code in some fixed width fontiness
 		const char *sourceHeader = "<pre style=\"font:8pt Monaco\">";
 		const char *sourceFooter = "</pre>";
-		NSMutableString *sourceOutput = [[[NSMutableString alloc] initWithCString: sourceHeader] autorelease];
-		NSMutableString *sourceCode   = [[[NSMutableString alloc] initWithContentsOfFile: FileLocation] autorelease];
-		NSMutableString *sourceEnd    = [[[NSMutableString alloc] initWithCString: sourceFooter] autorelease];
+		NSMutableString *sourceOutput = [NSMutableString stringWithCString: sourceHeader encoding: NSUTF8StringEncoding];
+		NSMutableString *sourceCode   = [[[NSMutableString alloc] initWithContentsOfFile: FileLocation encoding: NSUTF8StringEncoding error: &error] autorelease];
+		NSMutableString *sourceEnd    = [NSMutableString stringWithCString: sourceFooter encoding: NSUTF8StringEncoding];
 
 		[sourceOutput appendString: sourceCode];
 		[sourceOutput appendString: sourceEnd];
